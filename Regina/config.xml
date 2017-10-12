@@ -1,0 +1,17 @@
+ 
+  <platform name="ios">
+  <icon src="lib/onsen/img/icon-60@3x.png" width="180" height="180" />
+  <icon src="lib/onsen/img/icon-60.png" width="60" height="60" />
+  <name>Wadschina</name>
+ </platform>
+  
+<platform name="android">
+<icon src="lib/onsen/img/hdpi.png" density="hdpi" />
+<icon src="lib/onsen/img/xhdpi.png" density="xhdpi" />
+<icon src="lib/onsen/img/xxhdpi.png" density="xxhdpi" />
+<icon src="lib/onsen/img/xxxhdpi.png" density="xxxhdpi" />
+<icon src="lib/onsen/img/fr-xxhdpi.png" density="fr-xxhdpi" />
+<name>Wadschina</name>
+</platform>
+
+
