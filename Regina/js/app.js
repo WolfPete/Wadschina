@@ -55,13 +55,32 @@ function onSuccess(tx,r){
 };
 
 function openDB(){
-    db = openDatabase('list' , '1.0' , 'Test1', 2 * 1024 * 1024);
+    db = openDatabase('list' , '1.0' , 'Test1', 2 * 1024 * 1024, defaultData );
 
   db.transaction(function(tx) {
     tx.executeSql("CREATE TABLE IF NOT EXISTS list (ID INTEGER PRIMARY KEY ASC,title TEXT,kategorie TEXT,description TEXT,urgent TEXT,add_item_1 TEXT,add_item_2 TEXT,add_item_3 TEXT,add_item_4 TEXT,add_item_5 TEXT,add_item_6 TEXT,add_item_7 TEXT,add_item_8 TEXT,add_item_9 TEXT,add_item_10 TEXT,add_item_11 TEXT,add_item_12 TEXT,add_item_13 TEXT,add_item_14 TEXT,add_item_15 TEXT,chb_item_1 TEXT,chb_item_2 TEXT,chb_item_3 TEXT,chb_item_4 TEXT,chb_item_5 TEXT,chb_item_6 TEXT,chb_item_7 TEXT,chb_item_8 TEXT,chb_item_9 TEXT,chb_item_10 TEXT,chb_item_11 TEXT,chb_item_12 TEXT,chb_item_13 TEXT,chb_item_14 TEXT,chb_item_15 TEXT,status TEXT)", []);
   // tx.executeSql("CREATE TABLE IF NOT EXISTS list (ID INTEGER PRIMARY KEY ASC,title TEXT,kind TEXT,gruppen TEXT)", [] );
   });
 };
+
+function defaultData(){	
+	
+	db.transaction(function(tx) {
+ tx.executeSql("CREATE TABLE IF NOT EXISTS list (ID INTEGER PRIMARY KEY ASC,title TEXT,kategorie TEXT,description TEXT,urgent TEXT,add_item_1 TEXT,add_item_2 TEXT,add_item_3 TEXT,add_item_4 TEXT,add_item_5 TEXT,add_item_6 TEXT,add_item_7 TEXT,add_item_8 TEXT,add_item_9 TEXT,add_item_10 TEXT,add_item_11 TEXT,add_item_12 TEXT,add_item_13 TEXT,add_item_14 TEXT,add_item_15 TEXT,chb_item_1 TEXT,chb_item_2 TEXT,chb_item_3 TEXT,chb_item_4 TEXT,chb_item_5 TEXT,chb_item_6 TEXT,chb_item_7 TEXT,chb_item_8 TEXT,chb_item_9 TEXT,chb_item_10 TEXT,chb_item_11 TEXT,chb_item_12 TEXT,chb_item_13 TEXT,chb_item_14 TEXT,chb_item_15 TEXT,status TEXT)", [] );
+ });
+	
+	db.transaction(function(tx) {
+	//Initial Data
+ tx.executeSql('INSERT into list (title, kategorie, description, urgent, add_item_1, add_item_2, add_item_3, add_item_4, add_item_5, add_item_6, add_item_7, add_item_8, add_item_9, add_item_10, add_item_11, add_item_12, add_item_13, add_item_14, add_item_15, chb_item_1, chb_item_2, chb_item_3, chb_item_4, chb_item_5, chb_item_6, chb_item_7, chb_item_8, chb_item_9, chb_item_10, chb_item_11, chb_item_12, chb_item_13, chb_item_14, chb_item_15) VALUES ("Reginas Motoröl" , "Getränk" , "Für Badi Wettkampf", "false", "9 Äpfel", "2 Pfirsich", "1/16 l Milch", "21g TK Früchtemix", "34,5g TK Erdis", "29g TK Himbis", "2l Likör 48", "1/5ml Wasser", "4 Dreckbollen von  der letzten Radtour", "2 halbe Trauben", "1/49 ml Kaffee", "0,75l Schnaps", "2mg Gummi vom Reifen", "7 große Wassermelonen", "4 viertel von der Tonkabohne","false", "false","false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" );', []);
+ tx.executeSql('INSERT into list (title, kategorie, description, urgent, add_item_1, add_item_2, add_item_3, add_item_4, add_item_5, add_item_6, add_item_7, add_item_8, add_item_9, add_item_10, add_item_11, add_item_12, add_item_13, add_item_14, add_item_15, chb_item_1, chb_item_2, chb_item_3, chb_item_4, chb_item_5, chb_item_6, chb_item_7, chb_item_8, chb_item_9, chb_item_10, chb_item_11, chb_item_12, chb_item_13, chb_item_14, chb_item_15) VALUES ("Fahrradtasche packen", "Olympia", "Ohne Wolli geht nix","false", "Wolli", "Olli", "22 Äpfel", "Rad", "Flippis", "Wasserflasche","Wolle CD 1-479", "Schokorosinen", "Tschweinis", "Matsch", "9 Freunde", "Schnaps", "Börnsens Strampler", "Frischkäse", "Wadschi","false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" ,"false" );', [] );
+ });  
+};
+
+function test(){
+}
+
+
+
 
 function getItems()
 {
@@ -282,7 +301,7 @@ function addItem()
   var group_value = group_textbox.value;
 
   var desc_textbox = document.getElementById("description-input");
-  var desc_value = group_textbox.value;
+  var desc_value = desc_textbox.value;
 
   var urgent_textbox = document.getElementById("urgent-input");
   var urgent_value = urgent_textbox.checked;
