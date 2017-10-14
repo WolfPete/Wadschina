@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wadschina's Mente</title>
+
+<link rel="shortcut icon" href="lib/onsen/img//favicon.ico">
+<link rel="icon" type="image/png" href="lib/onsen/img//favicon.png" sizes="32x32">
+<link rel="icon" type="image/png" href="lib/onsen/img//favicon.png" sizes="96x96">
+<link rel="apple-touch-icon" sizes="180x180" href="lib/onsen/img//apple-touch-icon.png">
+
+  <script src="lib/onsen/js/onsenui.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+
+  <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="app.css">
+
+  <icon src="lib/onsen/img/icon.png" platform="ios" width="180" height="180" />
+
+  <icon src="lib/onsen/img/hdpi.png" platform="android" qualifier="hdpi" />
+<icon src="lib/onsen/img/xhdpi.png" platform="android" qualifier="xhdpi" />
+<icon src="lib/onsen/img/xxhdpi.png" platform="android" qualifier="xxhdpi" />
+<icon src="lib/onsen/img/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+<icon src="lib/onsen/img/fr-xxhdpi.png" platform="android" qualifier="fr-xxhdpi" />
+<name>Wadschina</name>
+</head>
+
+<body>
+
+
+
+  <template id="start.html">
+    <ons-page id = "start">
+
+      <ons-carousel swipeable overscrollable auto-scroll fullscreen var="carousel">
+        <ons-carousel-item style="background-color: #424242">
+
+                <img src="lib/onsen/img/wolle_3.gif" class ="imgstyle">
+
+				<div class="load-wrapp">
+				 <div class="load-6">
+				 <div class="letter-holder">
+					<!--  <div class="l-1 letter"><ons-icon icon="ion-chevron-left" style="padding-bottom:20px"</ons-icon>
+					&nbsp; &nbsp;</div> 	-->
+                    <div class="l-1 letter">E</div>
+                    <div class="l-2 letter">n</div>
+                    <div class="l-3 letter">t</div>
+                    <div class="l-4 letter">l</div>
+                    <div class="l-5 letter">a</div>
+                    <div class="l-6 letter">n</div>
+                    <div class="l-7 letter">g</div>
+                    <div class="l-8 letter">s</div>
+                    <div class="l-9 letter">c</div>
+                    <div class="l-10 letter">h</div>
+                    <div class="l-11 letter">m</div>
+                    <div class="l-12 letter">i</div>
+                    <div class="l-13 letter">e</div>
+                    <div class="l-14 letter">r</div>
+                    <div class="l-15 letter">e</div>
+                    <div class="l-16 letter">n</div>
+                   <!-- <div class="l-17 letter"><ons-icon icon="ion-android-arrow-forward"</ons-icon></div>  -->
+                </div>
+                </div>
+                </div>
+
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+            <img src="lib/onsen/img/feiern.gif" class ="imgstyle" style="height: 100% ; width: 100%">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+            <img src="lib/onsen/img/paul.gif" class ="imgstyle" style="height: 100% ">
+        </ons-carousel-item>
+        <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+            <img src="lib/onsen/img/laura.gif" class ="imgstyle" style="height: 100%; width: 100%"">
+        </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/g.gif" class ="imgstyle" style="height: 100%">
+      </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/tschweini.gif" class ="imgstyle" style="height: 100%;  width: 300%">
+      </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/regina.gif" class ="imgstyle" style="height: 100%">
+      </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/hollister.gif" class ="imgstyle" style="height: 100% ">
+      </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/laura2.gif" class ="imgstyle" style="height: 100%; width: 100%"">
+      </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/ich.gif" class ="imgstyle" style="height: 100%; width: 100%">
+      </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/musical.gif" class ="imgstyle" style="height: 100%">
+      </ons-carousel-item>
+      <ons-carousel-item style="background-color: hsla(135, 94%, 25%, 1);">
+          <img src="lib/onsen/img/ende.gif" class ="imgstyle" style="height: 100%; width: 100%">
+      </ons-carousel-item>
+
+
+
+      </ons-carousel>
+    </ons-page>
+  </template>
+
+
+<!-- <div class="load-wrapp" style="text-align: center; font-size: 15px; maring-bottom: 15 px;  color: #fff;">	 -->
+  <!-- First navigation component: Navigator. This will remain always on top of the app. -->
+  <ons-navigator id="myNavigator" page="splitter.html">
+  </ons-navigator>
+
+
+
+
+  <!-- Second navigation component: Splitter. This will disappear if the first component changes its content. -->
+  <template id="splitter.html">
+    <ons-page>
+      <ons-splitter id="mySplitter">
+        <ons-splitter-side page="menu.html" swipeable width="250px" collapse swipe-target-width="50px">
+        </ons-splitter-side>
+        <ons-splitter-content id="content" page="tabbar.html">
+        </ons-splitter-content>
+      </ons-splitter>
+    </ons-page>
+  </template>
+
+  <!-- Third navigation component: Tabbar. This will disappear if the first or second components change their content. -->
+  <template id="tabbar.html">
+    <ons-page id="tabbarPage">
+      <ons-toolbar>
+        <div class="left">
+          <!-- Toolbar-button with different icons depending on the platform. -->
+          <ons-toolbar-button component="button/menu">
+            <ons-icon icon="ion-navicon, material:md-menu" size="32px, material:24px"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+		 <div class="center">
+        <ons-icon rotate="180" icon="fa-meetup" size="35px"></ons-icon>
+		<font face="Comic Sans Ms" size="3px"> adschina's Mente </font>
+		</div>
+
+        <div class="right">
+          <!-- Toolbar-button  only visible for iOS/other. -->
+          <ons-if platform="ios other">
+            <ons-toolbar-button component="button/new-task">
+			<ons-icon icon="ion-plus-round" size="24px,"></ons-icon>
+			</ons-toolbar-button>
+          </ons-if>
+        </div>
+      </ons-toolbar>
+
+      <!-- Floating Action Button only visible for Android. -->
+      <ons-if platform="android">
+        <ons-fab position="right bottom" component="button/new-task">
+          <ons-icon icon="md-edit"></ons-icon>
+        </ons-fab>
+      </ons-if>
+
+      <!-- Auto-positioned Tabbar: top on Android, bottom on iOS/other. -->
+      <ons-tabbar id="myTabbar" position="auto">
+	  <ons-tab page="start.html" active label="Regina" icon="ion-android-bicycle" active-icon="md-airline-seat-recline-extra" onlick="playW()">
+	  </ons-tab>
+        <ons-tab page="pending_tasks.html" label="Offene Wollepunkte" icon="ion-clipboard" badge="1999" onlick="playWolfgang()"> </ons-tab>
+        <ons-tab page="completed_tasks.html" label="Stiefledigt" icon="fa-thumbs-up" onclick="getErledigt()"> </ons-tab>
+      </ons-tabbar>
+    </ons-page>
+  </template>
+
+
+
+
+  <template id="pending_tasks.html" >
+  <ons-page id="pendingTasksPage" onlick="playWolfgang()">
+  <ons-list id="pending-list">
+  </ons-list>
+</ons-page>
+ </template>
+
+
+ <template id="menu.html">
+ <ons-page id="menuPage">
+
+
+  <ons-list-title> <ons-icon icon="fa-suitcase"> &nbsp; Wer fährt gerne in den Urlaub?</ons-list-title>
+  <ons-list id="default-category-list">
+    <ons-list-item tappable onclick="playww1()">
+      <div class="left">
+        <ons-radio name="categoryGroup" input-id="r-all" checked></ons-radio>
+      </div>
+      <label class="center" for="r-all">Alle </label>
+    </ons-list-item>
+    <ons-list-item tappable category-id="">
+      <div class="left">
+        <ons-radio name="categoryGroup" input-id="r-no"></ons-radio>
+      </div>
+      <label class="center" for="r-no">Keiner</label>
+    </ons-list-item>
+  </ons-list>
+
+  <ons-list-title> <ons-icon icon="fa-bicycle"> &nbsp; Mountainbike Kategorien</ons-list-title>
+  <ons-list id="custom-category-list">
+  </ons-list>
+</ons-page>
+ </template>
+
+
+  <template id="completed_tasks.html">
+ <ons-page id="completedTasksPage">
+  <ons-list id="completed-list">
+  </ons-list>
+</ons-page>
+ </template>
+
+
+ <template id="details_task.html">
+ <ons-page id="detailsTaskPage">
+  <ons-toolbar>
+    <div class="left"><ons-back-button></ons-back-button></div>
+    <div class="center">Details</div>
+    <div class="right">
+      <ons-toolbar-button component="button/save-task">
+          <ons-icon icon="fa-floppy-o" size="24px,"></ons-icon>
+      </ons-toolbar-button>
+    </div>
+  </ons-toolbar>
+
+  <ons-list-title>Ein kleines Stück Papier</ons-list-title>
+  <ons-list>
+    <ons-list-item modifier="nodivider">
+      <ons-if platform="ios other" class="left left-label">
+        Titel
+      </ons-if>
+      <div class="center">
+        <ons-input id="title-input" type="text" placeholder="Titel" float disabled></ons-input>
+      </div>
+    </ons-list-item>
+    <ons-list-item modifier="nodivider">
+      <ons-if platform="ios other" class="left left-label">
+        Kategorie
+      </ons-if>
+      <div class="center">
+        <ons-input id="category-input" type="text" placeholder="Kategorie" float></ons-input>
+      </div>
+    </ons-list-item>
+    <ons-list-item modifier="nodivider">
+      <ons-if platform="ios other" class="left left-label">
+        Beschreibung
+      </ons-if>
+      <div class="center">
+        <ons-input id="description-input" type="text" placeholder="Beschreibung" float></ons-input>
+      </div>
+    </ons-list-item>
+  </ons-list>
+
+  <ons-list>
+    <ons-list-item modifier="nodivider">
+      <label class="center" for="inner-urgent-input">
+        Höggschde Priorität
+      </label>
+      <div class="right">
+        <ons-switch id="urgent-input" input-id="inner-urgent-input"></ons-switch>
+      </div>
+    </ons-list-item>
+  </ons-list>
+
+  <ons-list-title>Wolliste bearbeiten</ons-list-title>
+  <ons-list>
+  <ons-list-item modifier="nodivider">
+  <label class="left">
+  <ons-checkbox id="list-value-1"> </ons-checkbox>
+  </label>
+      <div class="center">
+        <ons-input id="list-item-1" type="text" placeholder="Punkt 1" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-2" ></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-2" type="text" placeholder="Punkt 2" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-3"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-3" type="text" placeholder="Punkt 3" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-4"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-4" type="text" placeholder="Punkt 4" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-5"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-5" type="text" placeholder="Punkt 5" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-6"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-6" type="text" placeholder="Punkt 6" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-7"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-7" type="text" placeholder="Punkt 7" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-8"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-8" type="text" placeholder="Punkt 8" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-9"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-9" type="text" placeholder="Punkt 9" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-10"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-10" type="text" placeholder="Punkt 10" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-11"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-11" type="text" placeholder="Punkt 11" float></ons-input>
+      </div>
+    </ons-list-item>
+	<ons-list-item modifier="nodivider">
+	<label class="left">
+  <ons-checkbox id="list-value-12"></ons-checkbox>
+  </label>
+	<div class="center">
+        <ons-input id="list-item-12" type="text" placeholder="Punkt 12" float></ons-input>
+      </div>
+    </ons-list-item>
+
+	<ons-list-item modifier="nodivider">
+  <label class="left">
+  <ons-checkbox id="list-value-13"> </ons-checkbox>
+  </label>
+      <div class="center">
+        <ons-input id="list-item-13" type="text" placeholder="Punkt 13" float></ons-input>
+      </div>
+    </ons-list-item>
+
+	<ons-list-item modifier="nodivider">
+  <label class="left">
+  <ons-checkbox id="list-value-14"> </ons-checkbox>
+  </label>
+      <div class="center">
+        <ons-input id="list-item-14" type="text" placeholder="Punkt 14" float></ons-input>
+      </div>
+    </ons-list-item>
+
+	<ons-list-item modifier="nodivider">
+  <label class="left">
+  <ons-checkbox id="list-value-15"> </ons-checkbox>
+  </label>
+      <div class="center">
+        <ons-input id="list-item-15" type="text" placeholder="Punkt 15" float></ons-input>
+      </div>
+    </ons-list-item>
+	</ons-list>
+
+
+  </ons-page>
+</template>
+
+
+
+
+<template id="new_task.html">
+<ons-page id="newTaskPage">
+ <ons-toolbar>
+   <div class="left"><ons-back-button></ons-back-button></div>
+   <div class="center">Neue Notiz</div>
+   <div class="right">
+       <ons-toolbar-button component="button/save-task">
+     <ons-icon icon="fa-floppy-o" size="24px,"></ons-icon>
+       </ons-toolbar-button>
+   </div>
+ </ons-toolbar>
+
+
+ <ons-list-title> Ein kleines Stück Papier </ons-list-title>
+ <ons-list>
+   <ons-list-item modifier="nodivider">
+     <div class="center">
+       <ons-input id="title-input" type="text" placeholder="Titel" float></ons-input>
+     </div>
+   </ons-list-item>
+   <ons-list-item modifier="nodivider">
+     <div class="center">
+       <ons-input id="category-input" type="text" placeholder="Kategorie" float></ons-input>
+     </div>
+   </ons-list-item>
+   <ons-list-item modifier="nodivider">
+     <div class="center">
+       <ons-input id="description-input" type="text" placeholder="Beschreibung" float></ons-input>
+     </div>
+   </ons-list-item>
+ </ons-list>
+
+ <ons-list>
+   <ons-list-item modifier="nodivider">
+     <label class="center" for="inner-urgent-input">
+       Höggschde Priorität
+     </label>
+     <div class="right">
+       <ons-switch id="urgent-input" input-id="inner-urgent-input"></ons-switch>
+     </div>
+   </ons-list-item>
+ </ons-list>
+
+ <ons-list-title>Wolliste einfügen</ons-list-title>
+ <ons-list>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-1"> </ons-checkbox>
+ </label>
+     <div class="center">
+       <ons-input id="list-item-1" type="text" placeholder="Punkt 1" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-2" ></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-2" type="text" placeholder="Punkt 2" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-3"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-3" type="text" placeholder="Punkt 3" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-4"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-4" type="text" placeholder="Punkt 4" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-5"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-5" type="text" placeholder="Punkt 5" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-6"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-6" type="text" placeholder="Punkt 6" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-7"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-7" type="text" placeholder="Punkt 7" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-8"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-8" type="text" placeholder="Punkt 8" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-9"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-9" type="text" placeholder="Punkt 9" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-10"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-10" type="text" placeholder="Punkt 10" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-11"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-11" type="text" placeholder="Punkt 11" float></ons-input>
+     </div>
+   </ons-list-item>
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-12"></ons-checkbox>
+ </label>
+ <div class="center">
+       <ons-input id="list-item-12" type="text" placeholder="Punkt 12" float></ons-input>
+     </div>
+   </ons-list-item>
+
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-13"> </ons-checkbox>
+ </label>
+     <div class="center">
+       <ons-input id="list-item-13" type="text" placeholder="Punkt 13" float></ons-input>
+     </div>
+   </ons-list-item>
+
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-14"> </ons-checkbox>
+ </label>
+     <div class="center">
+       <ons-input id="list-item-14" type="text" placeholder="Punkt 14" float></ons-input>
+     </div>
+   </ons-list-item>
+
+ <ons-list-item modifier="nodivider">
+ <label class="left">
+ <ons-checkbox id="list-value-15"> </ons-checkbox>
+ </label>
+     <div class="center">
+       <ons-input id="list-item-15" type="text" placeholder="Punkt 15" float></ons-input>
+     </div>
+   </ons-list-item>
+ </ons-list>
+
+
+</ons-page>
+</template>
+
+
+
+</body>
+
+</html>
